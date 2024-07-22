@@ -1132,6 +1132,8 @@ function Quad(h_subject, h_predicate, h_object, h_graph=KT_DEFAULT_GRAPH) {
 	this.object = h_object;
 	this.graph = h_graph;
 } Object.assign(Quad.prototype, {
+	value: '',
+	termType: 'Quad',
 	isGraphyQuad: true,
 
 	equals(z_other) {
